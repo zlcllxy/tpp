@@ -28,8 +28,8 @@ The 2025 recall election has become the most central issue in Taiwanese politics
 
 ```bash
 python -m venv venv
-source venv/bin/activate          # Windows use venv\Scripts\activate
-pip install -r requirements.txt   # Install dependencies
+source venv/bin/activate          
+pip install -r requirements.txt   
 ```
 
 ## 4 Execution Method
@@ -37,7 +37,7 @@ pip install -r requirements.txt   # Install dependencies
 1. Place `tpp_posts.csv` in the project root directory.
 2. Execute in terminal:
    ```bash
-   python clean.py
+   python Analysis.py
    ```
    The script will sequentially complete data filtering, sentiment analysis, engagement calculation, and output all intermediate and final result files while automatically generating two analysis charts.
 3. Open `Figure_1.jpg` and `Figure_2.jpg` to view the visualization results.
@@ -53,7 +53,7 @@ pip install -r requirements.txt   # Install dependencies
 ## 6 File Structure
 
 ```text
-├── clean.py
+├── Analysis.py
 ├── tpp_posts.csv
 ├── tpp_dabaimian.csv
 ├── tpp_dabaimian_sentiment.csv
